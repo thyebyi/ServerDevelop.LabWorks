@@ -1,0 +1,13 @@
+C:\Users\lagra\source\repos\UdpFileTransfer\UdpFileTransfer\bin\Debug\UdpFileTransfer.exe.config
+C:\Users\lagra\source\repos\UdpFileTransfer\UdpFileTransfer\bin\Debug\UdpFileTransfer.exe
+C:\Users\lagra\source\repos\UdpFileTransfer\UdpFileTransfer\bin\Debug\UdpFileTransfer.pdb
+C:\Users\lagra\source\repos\UdpFileTransfer\UdpFileTransfer\obj\Debug\UdpFileTransfer.csprojAssemblyReference.cache
+C:\Users\lagra\source\repos\UdpFileTransfer\UdpFileTransfer\obj\Debug\UdpFileTransfer.csproj.CoreCompileInputs.cache
+C:\Users\lagra\source\repos\UdpFileTransfer\UdpFileTransfer\obj\Debug\UdpFileTransfer.exe
+C:\Users\lagra\source\repos\UdpFileTransfer\UdpFileTransfer\obj\Debug\UdpFileTransfer.pdb
+C:\Users\thyebyi\Desktop\UdpFileTransfer\UdpFileTransfer\bin\Debug\UdpFileTransfer.exe.config
+C:\Users\thyebyi\Desktop\UdpFileTransfer\UdpFileTransfer\bin\Debug\UdpFileTransfer.exe
+C:\Users\thyebyi\Desktop\UdpFileTransfer\UdpFileTransfer\bin\Debug\UdpFileTransfer.pdb
+C:\Users\thyebyi\Desktop\UdpFileTransfer\UdpFileTransfer\obj\Debug\UdpFileTransfer.csprojAssemblyReference.cache
+C:\Users\thyebyi\Desktop\UdpFileTransfer\UdpFileTransfer\obj\Debug\UdpFileTransfer.exe
+C:\Users\thyebyi\Desktop\UdpFileTransfer\UdpFileTransfer\obj\Debug\UdpFileTransfer.pdb
