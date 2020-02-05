@@ -1,0 +1,6 @@
+C:\Users\thyebyi\Documents\GitHub\ServerDevelop.LabWorks\ServerDevelop.LabWorks\2Tcp\2Tcp\bin\Debug\2Tcp.exe.config
+C:\Users\thyebyi\Documents\GitHub\ServerDevelop.LabWorks\ServerDevelop.LabWorks\2Tcp\2Tcp\bin\Debug\2Tcp.exe
+C:\Users\thyebyi\Documents\GitHub\ServerDevelop.LabWorks\ServerDevelop.LabWorks\2Tcp\2Tcp\bin\Debug\2Tcp.pdb
+C:\Users\thyebyi\Documents\GitHub\ServerDevelop.LabWorks\ServerDevelop.LabWorks\2Tcp\2Tcp\obj\Debug\TcpPrac.csprojAssemblyReference.cache
+C:\Users\thyebyi\Documents\GitHub\ServerDevelop.LabWorks\ServerDevelop.LabWorks\2Tcp\2Tcp\obj\Debug\2Tcp.exe
+C:\Users\thyebyi\Documents\GitHub\ServerDevelop.LabWorks\ServerDevelop.LabWorks\2Tcp\2Tcp\obj\Debug\2Tcp.pdb
