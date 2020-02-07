@@ -40,49 +40,7 @@ namespace TcpServer
             if (headers[0] != "GET")
                 throw new HttpListenerException(400);
             return headers[1].Substring(1);
-            /*
-             * string[] headerOnlyPathMas = headers[1].Split('/');
-            string headerOnlyPath = "";
-            for (int i = 0; i < headerOnlyPathMas.Length - 1; i++)
-                headerOnlyPath += headerOnlyPathMas[i] + '/';
-            headerOnlyPath = "." + headerOnlyPath;
-            //string textMessage = $"<script src=\"js/jquery-3.3.1.min.js\"></script>";
-            string[] parts = message.Split(' ');
-            string toReturn = "";
-            string sep = "src=\"";
-            for (int i = 0; i < parts.Length; i++)
-            {
-                sep = "src=\"";
-                int srcPos = parts[i].IndexOf(sep);
-                if (srcPos == -1)
-                {
-                    sep = "href=\"";
-                    srcPos = parts[i].IndexOf(sep);
-                    if (srcPos != -1)
-                    {
-                        if (parts[i][srcPos + sep.Length] == '#')
-                            continue;
-                        if (parts[i - 1].IndexOf("link") != -1)
-                            continue;
-                    }
-                    else
-                    {
-                        sep = "url('";
-                        srcPos = parts[i].IndexOf(sep);
-                        if (srcPos == -1)
-                            continue;
-                    }
-                    //if (srcPos != 0)
-                    //    if (parts[i].Substring(srcPos - 4, 8) == "linkhref")
-                    //        continue;
-                }
-                parts[i] = parts[i].Insert(srcPos + sep.Length, headerOnlyPath);
-                int j = 0;
-            }
-            foreach (var p in parts)
-                toReturn += p + " ";
-            return toReturn;
-            */
+
         }
 
         public override void Process()
@@ -91,17 +49,13 @@ namespace TcpServer
             {
                 NetworkStream output = client.GetStream();
                 string body3 = GETRequest();
-
-                //string body1 = "<!DOCTYPE html><html><body><p>";
-                //string body2 = "</p></body></html>";
                 string body = body3;
                 string response = GETResponse(HttpStatusCode.OK, "text/html", body.Length);
                 Console.WriteLine(response);
                 byte[] buffer = Encoding.ASCII.GetBytes(response + body);
                 output.Write(buffer, 0, buffer.Length);
 
-                //buffer = Encoding.ASCII.GetBytes(body);
-                //output.Write(buffer, 0, buffer.Length);
+
             }
             catch (Exception e)
             {

@@ -21,7 +21,7 @@ namespace TcpPrac
         public string ContentType(string filepath)
         {
             string ext = Path.GetExtension(filepath);
-            switch(ext)
+            switch (ext)
             {
                 case ".htm":
                 case ".html":
@@ -58,14 +58,19 @@ namespace TcpPrac
                 {
                     requestUrl = "index.html";
                 }
+                
 
                 string filePath = Path.Combine(rootPath, requestUrl);
                 Console.WriteLine(filePath);
 
-                if(!File.Exists(filePath))
+                if (!File.Exists(filePath))
                 {
                     throw new HttpListenerException(404, filePath);
                 }
+
+                
+                
+                
 
                 try
                 {
@@ -75,17 +80,17 @@ namespace TcpPrac
                     byte[] headerBuffer = Encoding.UTF8.GetBytes(header);
                     client.GetStream().Write(headerBuffer, 0, headerBuffer.Length);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
                 finally
                 {
-                    if(content!=null)
+                    if (content != null)
                     {
                         byte[] buffer = new byte[1024];
                         var outp = client.GetStream();
-                        while(content.Position < content.Length)
+                        while (content.Position < content.Length)
                         {
                             int count = content.Read(buffer, 0, buffer.Length);
                             outp.Write(buffer, 0, count);
@@ -100,6 +105,9 @@ namespace TcpPrac
             }
             catch (Exception ex)
             {
+                header = GETResponse(HttpStatusCode.NotFound, "text.html", 0);
+                byte[] headerBuffer = Encoding.UTF8.GetBytes(header);
+                client.GetStream().Write(headerBuffer, 0, headerBuffer.Length);
                 Console.WriteLine(ex.Message);
             }
         }
